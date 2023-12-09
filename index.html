@@ -1,80 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Krona+One&amp;family=Limelight&amp;family=Sora:wght@100&amp;display=swap&quot; rel=&quot;stylesheet">
-    <title>TutorMe</title>
-</head>
-<body>
-    <header class="page-header">
-        <nav class="page-navigation">
-            <ul class="page-list">
-                <li class="page-navigation-item">
-                    <a class="page-navigation-item-link" href="#site-index-main">Главная</a>
-                </li>
-                <li class="page-navigation-item">
-                    <a class="page-navigation-item-link" href="#relevance">Актуальность</a>
-                </li>
-                <li class="page-navigation-item">
-                    <a class="page-navigation-item-link" href="#features">О нас</a>
-                </li>
-            </ul>
-            <a href="#" class="page-navigation-link">Войти</a>
-        </nav>
-    </header>
-    <main class="index-main" id="site-index-main">
-        <div class="index-container">
-            <h1 class="index-title index-container-title">Выйдите на новый уровень в преподавании</h1>
-        </div>
-        <section class="index-relevance" id="relevance">
-            <h2 class="index-title index-section-title">Помощник частных репетиторов</h2>
-            <div class="index-relevance__box">
-                <div class="index-relevance-paragraph">
-                    <p>Если Вы ведете занятия <strong>онлайн</strong> и устали от того, что все ученики на разных площадках, то
-                        наш сервис для вас! Так же Вам помогут удобные диалоги, в которых Вы можете отслеживать прогресс учеников.</p>
-                    <img src="https://img2.hocoos.com/cache/img-pack/1203/w-514/h-344/ww-514/wh-344/img-pack/1203/pexels-andrea-piacquadio-3931501.jpg" alt="">
-                </div>
-                <div class="index-relevance-paragraph">
-                    <p>Больше не будет множества <strong>сохраненных файлов</strong> на вашем компьютере, все домашние задания
-                        и тесты будут храниться на нашем сервисе!</p>
-                    <img src="https://img2.hocoos.com/cache/img-pack/1203/w-514/h-344/ww-514/wh-344/img-pack/1203/pexels-fauxels-3184328.jpg" alt="">
-                </div>
-            </div>
-        </section>
 
-        <section class="index-features" id="features">
-            <h2 class="index-title index-section-title">Что предлагает наш сервис?</h2>
-            <ol class="index-features-list">
-                <li class="index-features-item"><p>Все ученики собраны в <span>одном месте</span></p></li>
-                <li class="index-features-item"><p>Удобный <span>конструктор тестов</span> и домашних заданий</p></li>
-                <li class="index-features-item"><p><span>Календарь занятий</span> для Вас и Ваших учеников</p></li>
-            </ol>
-        </section>
-        <br>
-        <section class="index-specializations">
-            <h2 class="index-title index-section-title">Вне зависимости от специализации - удобно будет всем!</h2>
-            <ul class="index-specializations-list">
-                <li><img src="https://img2.hocoos.com/cache/img-pack/1203/w-445/h-430/ww-445/wh-430/img-pack/1203/pexels-andrea-piacquadio-3769021.jpg" alt=""></li>
-                <li><img src="https://img2.hocoos.com/cache/img-pack/1203/w-445/h-430/ww-445/wh-430/img-pack/1203/pexels-andrea-piacquadio-37603391.jpg" alt=""></li>
-                <li><img src="https://img2.hocoos.com/cache/img-pack/1203/w-445/h-430/ww-445/wh-430/img-pack/1203/pexels-emmy-e-2381069.jpg" alt=""></li>
-            </ul>
-        </section>
-        <br>
-    </main>
-    <footer class="page-footer">
-        <h3 class="page-footer-title index-section-title">Остались вопросы?</h3>
-        <p class="page-footer-paragraph">Свяжитесь с нами!</p>
-        <div class="page-footer-description-box">
-            <div class="page-footer-description-item">
-                <div class="page-footer-description-name">Электронная почта</div>
-                <a href="mailto:sss@gmail.com" class="page-footer-description-link">sss@gmail.com</a>
-            </div>
-            <div class="page-footer-description-item">
-                <div class="page-footer-description-name">Телефон</div>
-                <a href="tel:+77777777777" class="page-footer-description-link">+7-777-777-77-77</a>
-            </div>
-        </div>
-    </footer>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="репетитор препод преподавание учеба менторство образование онлайн">
+	<meta name="description" content="?">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic">
+	<link href="style.css" rel="stylesheet">
+	<script defer src="scripts/padeLoadTime.js"></script>
+	<script defer src="scripts/activePage.js"></script>
+	<script defer src="scripts/preloader.js"></script>
+	<script defer src="scripts/menu.js"></script>
+	<title>TutorMe</title>
+</head>
+
+<body>
+	<header class="page-header">
+		<div class="header__menu menu">
+			<div class="menu__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="page-navigation menu__body">
+				<ul class="page-list menu__list">
+					<li class="menu__item">
+						<a class="page-navigation-item-link menu__link" href="index.html">Главная</a>
+					</li>
+					<li class="menu__item">
+						<a class="page-navigation-item-link menu__link" href="dialogues.html">Диалоги</a>
+					</li>
+					<li class="menu__item">
+						<a class="page-navigation-item-link menu__link" href="calendar.html">Календарь занятий</a>
+					</li>
+					<li class="menu__item">
+						<a class="page-navigation-item-link menu__link" href="tests.html">Тесты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<button class="auth-button" type="button">Войти</button>
+	</header>
+	<main>
+		<div class="index-container">
+			<h1 class="index-title index-container-title">Выйдите на новый уровень в преподавании</h1>
+		</div>
+		<section class="index-relevance" id="relevance">
+			<h2 class="index-title index-section-title">Помощник частных репетиторов</h2>
+			<div class="index-relevance__box">
+				<div class="index-relevance-paragraph">
+					<p>Если Вы ведете занятия <strong>онлайн</strong> и устали от того, что все ученики на разных площадках, то
+						наш сервис для вас! Так же Вам помогут удобные диалоги, в которых Вы можете отслеживать прогресс учеников.</p>
+					<img src="https://img2.hocoos.com/cache/img-pack/1203/w-514/h-344/ww-514/wh-344/img-pack/1203/pexels-andrea-piacquadio-3931501.jpg" alt="">
+				</div>
+				<div class="index-relevance-paragraph">
+					<p>Больше не будет множества <strong>сохраненных файлов</strong> на вашем компьютере, все домашние задания
+						и тесты будут храниться на нашем сервисе!</p>
+					<img src="https://img2.hocoos.com/cache/img-pack/1203/w-514/h-344/ww-514/wh-344/img-pack/1203/pexels-fauxels-3184328.jpg" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="index-features" id="features">
+			<h2 class="index-title index-section-title">Что предлагает наш сервис?</h2>
+			<ol class="index-features-list">
+				<li class="index-features-item">
+					<p>Все ученики собраны в <span>одном месте</span></p>
+				</li>
+				<li class="index-features-item">
+					<p>Удобный <span>конструктор тестов</span> и домашних заданий</p>
+				</li>
+				<li class="index-features-item">
+					<p><span>Календарь занятий</span> для Вас и Ваших учеников</p>
+				</li>
+			</ol>
+		</section>
+		<br>
+		<section class="index-specializations">
+			<h2 class="index-title index-section-title">Вне зависимости от специализации - удобно будет всем!</h2>
+			<ul class="index-specializations-list">
+				<li><img src="https://img2.hocoos.com/cache/img-pack/1203/w-445/h-430/ww-445/wh-430/img-pack/1203/pexels-andrea-piacquadio-3769021.jpg" alt=""></li>
+				<li><img src="https://img2.hocoos.com/cache/img-pack/1203/w-445/h-430/ww-445/wh-430/img-pack/1203/pexels-andrea-piacquadio-37603391.jpg" alt=""></li>
+				<li><img src="https://img2.hocoos.com/cache/img-pack/1203/w-445/h-430/ww-445/wh-430/img-pack/1203/pexels-emmy-e-2381069.jpg" alt=""></li>
+			</ul>
+		</section>
+		<br>
+	</main>
+	<footer class="page-footer">
+		<h3 class="page-footer-title index-section-title">Остались вопросы?</h3>
+		<p class="page-footer-paragraph">Свяжитесь с нами!</p>
+		<div class="page-footer-description-box">
+			<div class="page-footer-description-item">
+				<div class="page-footer-description-name">Электронная почта</div>
+				<a href="mailto:sss@gmail.com" class="page-footer-description-link">sss@gmail.com</a>
+			</div>
+			<div class="page-footer-description-item">
+				<div class="page-footer-description-name">Телефон</div>
+				<a href="tel:+77777777777" class="page-footer-description-link">+7-777-777-77-77</a>
+			</div>
+		</div>
+		<div id="load-time">
+			<h3 id="page-load-time"></h3>
+		</div>
+	</footer>
 </body>
+
 </html>
