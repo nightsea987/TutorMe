@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="keywords" content="репетитор препод преподавание учеба менторство образование онлайн">
-	<meta name="description" content="?">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic">
-	<link href="style.css" rel="stylesheet">
-	<script defer src="scripts/activePage.js"></script>
-	<script defer src="scripts/preloader.js"></script>
-	<script defer src="scripts/menu.js"></script>
-	<title>TutorMe</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="репетитор препод преподавание учеба менторство образование онлайн">
+    <meta name="description" content="?">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap&subset=cyrillic">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="scripts/activePage.js"></script>
+    <script defer src="scripts/preloader.js"></script>
+    <script defer src="scripts/createTest.js"></script>
+    <script defer src="scripts/menu.js"></script>
+    <script defer src="scripts/pageLoadTime.js"></script>
+    <title>TutorMe</title>
 </head>
-
 <body>
-	<header class="page-header">
-		<div class="header__menu menu">
-			<div class="menu__icon">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<nav class="page-navigation menu__body">
-				<ul class="page-list menu__list">
-					<li class="menu__item">
-						<a class="page-navigation-item-link menu__link" href="index.html">Главная</a>
-					</li>
-					<li class="menu__item">
-						<a class="page-navigation-item-link menu__link" href="dialogues.html">Диалоги</a>
-					</li>
-					<li class="menu__item">
-						<a class="page-navigation-item-link menu__link" href="calendar.html">Календарь занятий</a>
-					</li>
-					<li class="menu__item">
-						<a class="page-navigation-item-link menu__link" href="tests.html">Тесты</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<button class="auth-button" type="button">Войти</button>
-	</header>
-	<main>
-		<section class="tests-wrapper">
-			<button class="create-test" type="button">Создать тест</button>
-			<div class="items-container tests-container">
-				<div class="test">
-					<a href="#">Тест по теме "Название темы"</a>
-					<span>Количество участников: 50</span>
-				</div>
-				<div class="test">
-					<a href="#">Тест по теме "Название темы"</a>
-					<span>Количество участников: 50</span>
-				</div>
-				<div class="test">
-					<a href="#">Тест по теме "Название темы"</a>
-					<span>Количество участников: 50</span>
-				</div>
-				<div class="test">
-					<a href="#">Тест по теме "Название темы"</a>
-					<span>Количество участников: 50</span>
-				</div>
-				<div class="test">
-					<a href="#">Тест по теме "Название темы"</a>
-					<span>Количество участников: 50</span>
-				</div>
-				<div class="test">
-					<a href="#">Тест по теме "Название темы"</a>
-					<span>Количество участников: 50</span>
-				</div>
-				<div class="test">
-					<a href="#">Тест по теме "Название темы"</a>
-					<span>Количество участников: 50</span>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="page-footer">
-		<h3 class="page-footer-title index-section-title">Остались вопросы?</h3>
-		<p class="page-footer-paragraph">Свяжитесь с нами!</p>
-		<div class="page-footer-description-box">
-			<div class="page-footer-description-item">
-				<div class="page-footer-description-name">Электронная почта</div>
-				<a href="mailto:sss@gmail.com" class="page-footer-description-link">sss@gmail.com</a>
-			</div>
-			<div class="page-footer-description-item">
-				<div class="page-footer-description-name">Телефон</div>
-				<a href="tel:+77777777777" class="page-footer-description-link">+7-777-777-77-77</a>
-			</div>
-		</div>
-	</footer>
+<header class="page-header">
+    <div class="header__menu menu">
+        <div class="menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="page-navigation menu__body">
+            <ul class="page-list menu__list">
+                <li class="menu__item">
+                    <a class="page-navigation-item-link menu__link" href="index.html">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="page-navigation-item-link menu__link" href="dialogues.html">Диалоги</a>
+                </li>
+                <li class="menu__item">
+                    <a class="page-navigation-item-link menu__link" href="calendar.html">Календарь занятий</a>
+                </li>
+                <li class="menu__item">
+                    <a class="page-navigation-item-link menu__link" href="tests.html">Тесты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <button class="auth-button" type="button">Войти</button>
+</header>
+<main>
+    <section class="tests-wrapper">
+        <form class="create-test-form" action="">
+            <div class="test-input">
+                <label for="theme">Введите тему: </label>
+                <input placeholder="Информатика ЕГЭ №15" id="theme" type="text" required />
+            </div>
+            <div class="test-input">
+                <label for="questions">Введите количество заданий: </label>
+                <input placeholder="10" id="questions" type="number" required />
+            </div>
+            <div class="test-input">
+                <label for="students">Введите количество участников: </label>
+                <input placeholder="10" id="students" type="number" required />
+            </div>
+            <div>
+                <button class="create-test" type="submit">Создать тест</button>
+                <div class="checkbox-button">
+                    <label for="save">Запомнить</label>
+                    <input id="save" type="checkbox" />
+                </div>
+            </div>
+        </form>
+        <div class="items-container tests-container"></div>
+    </section>
+</main>
+<footer class="page-footer">
+    <h3 class="page-footer-title index-section-title">Остались вопросы?</h3>
+    <p class="page-footer-paragraph">Свяжитесь с нами!</p>
+    <div class="page-footer-description-box">
+        <div class="page-footer-description-item">
+            <div class="page-footer-description-name">Электронная почта</div>
+            <a href="mailto:sss@gmail.com" class="page-footer-description-link">sss@gmail.com</a>
+        </div>
+        <div class="page-footer-description-item">
+            <div class="page-footer-description-name">Телефон</div>
+            <a href="tel:+77777777777" class="page-footer-description-link">+7-777-777-77-77</a>
+        </div>
+    </div>
+    <div id="load-time">
+        <h3 id="page-load-time"></h3>
+    </div>
+</footer>
 </body>
-
 </html>
